@@ -1,3 +1,3 @@
 # Hospital Drive By
 
-Ogg Vorbis file for music used from patrickdearteaga.com
+Ogg Vorbis file for background music used from patrickdearteaga.com
