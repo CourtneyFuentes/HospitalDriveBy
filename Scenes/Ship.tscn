@@ -1,0 +1,76 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/ship.png" type="Texture" id=1]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 1280, 1280 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 1280, 1280, 1280 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 2560, 1280, 1280 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ) ],
+"loop": true,
+"name": "fly",
+"speed": 8.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 107.44, 221.304 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 34.8625, 91.3661 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 59.901, 99.063 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 21.1046, 50.0515 )
+
+[node name="Ship" type="Node2D"]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+position = Vector2( 6.79126, -58.5929 )
+frames = SubResource( 4 )
+animation = "fly"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+visible = false
+position = Vector2( 11.3185, 63.3842 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
+visible = false
+position = Vector2( -140.933, -28.1097 )
+rotation = 1.08036
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="KinematicBody2D"]
+visible = false
+position = Vector2( 156.197, -28.7469 )
+rotation = 2.02633
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="KinematicBody2D"]
+visible = false
+position = Vector2( 9.05493, -256.174 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="KinematicBody2D"]
+visible = false
+position = Vector2( 6.85083, -386.583 )
+shape = SubResource( 8 )
