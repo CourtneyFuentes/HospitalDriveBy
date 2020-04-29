@@ -66,13 +66,11 @@ one_shot = true
 script = ExtResource( 5 )
 
 [node name="Timer" type="Timer" parent="Doctors"]
-autostart = true
 
 [node name="Nurses" type="Node2D" parent="."]
 script = ExtResource( 2 )
 
 [node name="Timer" type="Timer" parent="Nurses"]
-autostart = true
 
 [node name="Zombies" type="Node2D" parent="."]
 script = ExtResource( 6 )
@@ -93,7 +91,6 @@ position = Vector2( 1.02246, -3.53857 )
 scale = Vector2( 0.1, 0.1 )
 frames = SubResource( 4 )
 animation = "fly"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ship"]

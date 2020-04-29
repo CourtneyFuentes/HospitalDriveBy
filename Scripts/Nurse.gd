@@ -21,7 +21,7 @@ func _physics_process(delta):
 	for c in colliding:
 		if c.name == "Ship":
 			c.change_score(score)
-		queue_free()
+			queue_free()
 		
 	if position.y > get_viewport_rect().size.y + 50:
 		queue_free()

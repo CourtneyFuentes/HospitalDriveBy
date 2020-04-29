@@ -1,5 +1,5 @@
 extends Node2D
-export var probability = 0.2
+export var probability = 0.5
 onready var Doc = load("res://Scenes/Doctor.tscn")
 
 func _ready():

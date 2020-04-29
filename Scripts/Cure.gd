@@ -10,11 +10,11 @@ func _ready():
 func _physics_process(delta):
 	var colliding = get_colliding_bodies()
 	for c in colliding:
-		print(c.name)
-		if c.get_parent().name == "Zombies":
+		print(c.get_parent().name)
+		if c.name == "Zombie":
 			Player.change_score(c.score)
 			c.die()
-		queue_free()
+			queue_free()
 
 		queue_free()
 
