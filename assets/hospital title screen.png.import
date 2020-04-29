@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hospital title screen.png-f53b3eef74e852d83a319d286f248b8c.stex"
+path="res://.import/hospital title screen.png-6c4d18f4da441ed01a65421db437bae9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/hospital title screen.png"
-dest_files=[ "res://.import/hospital title screen.png-f53b3eef74e852d83a319d286f248b8c.stex" ]
+source_file="res://assets/hospital title screen.png"
+dest_files=[ "res://.import/hospital title screen.png-6c4d18f4da441ed01a65421db437bae9.stex" ]
 
 [params]
 

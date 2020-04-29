@@ -43,6 +43,24 @@ height = 55.4666
 stream = ExtResource( 1 )
 autoplay = true
 
+[node name="Ship" type="KinematicBody2D" parent="."]
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Ship"]
+position = Vector2( 522.281, 486.393 )
+scale = Vector2( 0.1, 0.1 )
+frames = SubResource( 4 )
+animation = "fly"
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ship"]
+position = Vector2( 521.845, 495.628 )
+shape = SubResource( 5 )
+
 [node name="Background" type="ColorRect" parent="."]
 margin_right = 1027.0
 margin_bottom = 605.0
@@ -54,6 +72,7 @@ __meta__ = {
 [node name="hospital background" type="Sprite" parent="Background"]
 position = Vector2( 508.24, 295.067 )
 scale = Vector2( 1.03, 1.022 )
+z_index = -3
 texture = ExtResource( 2 )
 
 [node name="Projectile" type="Node2D" parent="."]
@@ -75,23 +94,6 @@ script = ExtResource( 8 )
 script = ExtResource( 9 )
 
 [node name="Timer" type="Timer" parent="Zombies"]
-
-[node name="Ship" type="KinematicBody2D" parent="."]
-script = ExtResource( 4 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Ship"]
-position = Vector2( 522.281, 486.393 )
-scale = Vector2( 0.1, 0.1 )
-frames = SubResource( 4 )
-animation = "fly"
-playing = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ship"]
-position = Vector2( 521.845, 495.628 )
-shape = SubResource( 5 )
 
 [node name="HUD" type="Node2D" parent="."]
 script = ExtResource( 5 )
