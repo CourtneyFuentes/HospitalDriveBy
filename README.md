@@ -9,8 +9,8 @@ This game was developed as a final project for C220 as part of a 48 hour game ja
 When we considered the theme of COVID-19, we thought about it this way: we should make something lighthearted and funny. Our "brain map" seemed to center around a few possible themes: zombies, lysol, the cure, hospitals, doctors, and nurses.
 
 The technologies and resources we used: 
-Godot
-Photoshop to create the background image
+Godot,
+Photoshop to create the background image,
 Ogg Vorbis file for background music used from patrickdearteaga.com
 
 This is the objective of the game: 
