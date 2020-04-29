@@ -32,3 +32,4 @@ In the future the game may have more enemies, a title screen, be more than one l
  
  Courtney Fuentes: Added background music, created the background picture, handled the repository
  
+![](Images/Screenshot%20(31).png)
