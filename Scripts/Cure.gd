@@ -10,6 +10,7 @@ func _ready():
 func _physics_process(delta):
 	var colliding = get_colliding_bodies()
 	for c in colliding:
+
 		if c.name == "Zombie":
 			Player.change_score(c.score)
 			c.die()
