@@ -1,9 +1,22 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Assets/Death At My Heels.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Assets/hospital background.png" type="Texture" id=2]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 1 )
 autoplay = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1027.0
+margin_bottom = 605.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hospital background" type="Sprite" parent="ColorRect"]
+position = Vector2( 513, 303 )
+scale = Vector2( 1.03, 1.022 )
+texture = ExtResource( 2 )
