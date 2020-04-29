@@ -3,7 +3,7 @@ extends RigidBody2D
 
 export var score = 100
 export var damage = 25
-export var speed = 0.5
+export var speed = 2
 export var move_probability = 0.10
 
 var ready = false
@@ -22,6 +22,9 @@ func die():
 
 func _ready():
 	randomize()
+	var VP = get_viewport_rect().size
+	position.x = randi() % int(VP.x)
+	position.y = -10
 	get_new_position()
 
 
@@ -33,7 +36,7 @@ func _physics_process(delta):
 	for c in colliding:
 		if c.name == "Ship":
 			Player.change_health(-damage)
-		queue_free()
+			queue_free()
 
 	if position.y > get_viewport_rect().size.y + 10:
 		queue_free()

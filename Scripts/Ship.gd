@@ -36,8 +36,7 @@ func _physics_process(delta):
 	if Input.is_action_pressed("Fire"):
 		var b = Projectile.instance()
 		b.position = position
-		b.position.y -= 90
-		
+
 		get_node("/root/Game/Projectile").fire(b)
 		
 	if Input.is_action_pressed("Up"):
