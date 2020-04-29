@@ -35,8 +35,10 @@ __meta__ = {
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Nurse"]
+scale = Vector2( 0.1, 0.1 )
 frames = SubResource( 3 )
 animation = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Nurse"]
+scale = Vector2( 0.1, 0.1 )
 shape = SubResource( 4 )

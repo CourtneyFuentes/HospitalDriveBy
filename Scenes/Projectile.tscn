@@ -4,9 +4,10 @@
 [ext_resource path="res://Scripts/Cure.gd" type="Script" id=2]
 
 [node name="Projectile" type="Node2D"]
+position = Vector2( 56.5332, 35.7589 )
 
 [node name="Cure" type="RigidBody2D" parent="."]
-position = Vector2( 104.212, 57.2143 )
+position = Vector2( -0.0146599, 0.130749 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
