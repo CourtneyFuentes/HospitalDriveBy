@@ -10,7 +10,7 @@ When we considered the theme of COVID-19, we thought about it this way: we shoul
 
 The technologies and resources we used: 
 Godot,
-Photoshop to create the background image,
+Photoshop to create the background image, Piksel to create the sprites,
 Ogg Vorbis file for background music used from patrickdearteaga.com
 
 This is the objective of the game: 
