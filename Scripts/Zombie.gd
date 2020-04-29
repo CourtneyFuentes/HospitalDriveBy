@@ -18,7 +18,7 @@ var new_position = Vector2(0,0)
 	#ready = true
 
 func die():
-	queue_free()
+	get_parent().queue_free()
 
 func _ready():
 	randomize()
@@ -36,7 +36,7 @@ func _physics_process(delta):
 	for c in colliding:
 		if c.name == "Ship":
 			Player.change_health(-damage)
-			queue_free()
+			get_parent().queue_free()
 
 	if position.y > get_viewport_rect().size.y + 10:
 		queue_free()
