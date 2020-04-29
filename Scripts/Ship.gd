@@ -1,4 +1,4 @@
-extends Node2D
+extends KinematicBody2D
 export var health = 100
 export var score = 0
 export var margin = 5
@@ -9,7 +9,7 @@ var velocity = Vector2(0, 0)
 
 onready var View = get_viewport_rect().size
 
-onready var Cure = load("res://Scenes/Cure.tscn")
+onready var Projectile = load("res://Scenes/Projectile.tscn")
 
 signal health_lost
 signal score_gained
@@ -30,14 +30,14 @@ func change_score(s):
 
 func destroyed():
 	queue_free()
-	get_tree().change_scene("res://Scenes/GameOver.tscn")
+	get_tree().change_scene("res://Scenes/Game Over.tscn")
 
 func _physics_process(delta):
 	if Input.is_action_pressed("Fire"):
-		var b = Cure.instance()
+		var b = Projectile.instance()
 		b.position = position
 		b.position.y -= 25
-		get_node("/root/Game/Cure").fire(b)
+		get_node("/root/Game/Projectile").fire(b)
 		
 	if Input.is_action_pressed("Up"):
 		velocity.y -= accel
