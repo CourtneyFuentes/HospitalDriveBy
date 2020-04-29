@@ -26,51 +26,49 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 107.44, 221.304 )
+extents = Vector2( 43.8008, 99.7863 )
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 34.8625, 91.3661 )
+extents = Vector2( 22.8772, 34.9788 )
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 59.901, 99.063 )
+extents = Vector2( 27.5688, 44.4314 )
 
 [sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 21.1046, 50.0515 )
+extents = Vector2( 10.6415, 25.4347 )
 
 [node name="Ship" type="Node2D"]
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
-position = Vector2( 6.79126, -58.5929 )
+position = Vector2( 338.944, 273.56 )
+scale = Vector2( 0.481011, 0.481011 )
 frames = SubResource( 4 )
 animation = "fly"
-frame = 1
-playing = true
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-visible = false
-position = Vector2( 11.3185, 63.3842 )
+position = Vector2( 343.663, 325.656 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
-visible = false
-position = Vector2( -140.933, -28.1097 )
+position = Vector2( 267.364, 295.405 )
 rotation = 1.08036
 shape = SubResource( 6 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="KinematicBody2D"]
-visible = false
-position = Vector2( 156.197, -28.7469 )
+position = Vector2( 412.783, 293.111 )
 rotation = 2.02633
 shape = SubResource( 6 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="KinematicBody2D"]
-visible = false
-position = Vector2( 9.05493, -256.174 )
+position = Vector2( 337.665, 174.845 )
 shape = SubResource( 7 )
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="KinematicBody2D"]
-visible = false
-position = Vector2( 6.85083, -386.583 )
+position = Vector2( 341.088, 101.831 )
 shape = SubResource( 8 )

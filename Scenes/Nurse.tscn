@@ -24,6 +24,10 @@ animations = [ {
 extents = Vector2( 119.682, 240.46 )
 
 [node name="Nurse" type="Node2D"]
+position = Vector2( 453.366, 284.465 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 
