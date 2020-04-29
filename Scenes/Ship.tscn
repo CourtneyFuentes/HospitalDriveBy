@@ -38,6 +38,7 @@ extents = Vector2( 27.5688, 44.4314 )
 extents = Vector2( 10.6415, 25.4347 )
 
 [node name="Ship" type="Node2D"]
+scale = Vector2( 0.1, 0.1 )
 __meta__ = {
 "_edit_group_": true
 }

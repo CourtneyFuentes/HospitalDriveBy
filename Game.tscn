@@ -1,22 +1,30 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/Death At My Heels.ogg" type="AudioStream" id=1]
 [ext_resource path="res://Assets/hospital background.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Ship.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/Ship.gd" type="Script" id=4]
 
-[node name="Node2D" type="Node2D"]
+[node name="Game" type="Node2D"]
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 1 )
 autoplay = true
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="."]
 margin_right = 1027.0
 margin_bottom = 605.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="hospital background" type="Sprite" parent="ColorRect"]
+[node name="hospital background" type="Sprite" parent="Background"]
 position = Vector2( 513, 303 )
 scale = Vector2( 1.03, 1.022 )
 texture = ExtResource( 2 )
+
+[node name="Ship" type="Node2D" parent="."]
+
+[node name="Ship" parent="Ship" instance=ExtResource( 3 )]
+position = Vector2( 517.089, 489.519 )
+script = ExtResource( 4 )
