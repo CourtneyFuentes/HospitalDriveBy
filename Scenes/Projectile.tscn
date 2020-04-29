@@ -1,0 +1,7 @@
+[gd_scene format=2]
+
+[node name="Projectile" type="Node2D"]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="KinematicBody2D"]
