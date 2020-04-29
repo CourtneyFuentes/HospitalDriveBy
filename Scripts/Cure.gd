@@ -15,8 +15,7 @@ func _physics_process(delta):
 			Player.change_score(c.score)
 			c.die()
 		queue_free()
-	var pos = get_global_transform().get_origin()
-	if pos.y < -10:
+
 		queue_free()
 
 func _integrate_forces(state):
