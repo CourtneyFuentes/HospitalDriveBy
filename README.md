@@ -30,5 +30,5 @@ In the future the game may have more enemies, a title screen, be more than one l
  
  Thomas McHugh: Coding
  
- Courtney Fuentes: Added background music, created the background picture, handled the repository, slight debugging
+ Courtney Fuentes: Added background music, created the background picture, handled the repository
  
