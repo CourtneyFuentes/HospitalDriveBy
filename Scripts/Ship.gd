@@ -2,12 +2,12 @@ extends KinematicBody2D
 export var health = 100
 export var score = 0
 export var margin = 5
-export var y_range = 300
+export var y_range = 500
 export var accel = 0.1
 
 var velocity = Vector2(0, 0)
 
-onready var View = get_viewport_rect().size
+onready var VP = get_viewport_rect().size
 
 onready var Projectile = load("res://Scenes/Projectile.tscn")
 
@@ -51,14 +51,14 @@ func _physics_process(delta):
 	if position.x < margin:
 		velocity.x = 0
 		position.x = margin
-	if position.x > View.x - margin:
+	if position.x > VP.x - margin:
 		velocity.x = 0
-		position.x = View.x - margin
-	if position.y > View.y - margin:
+		position.x = VP.x - margin
+	if position.y < VP.y - y_range:
 		velocity.y = 0
-		position.y = View.y - margin
-	if position.y < margin:
+		position.y = VP.y - y_range
+	if position.y > VP.y - margin:
 		velocity.y = 0
-		position.y = margin
+		position.y = VP.y - margin
 	
 	var collision = move_and_collide(velocity)

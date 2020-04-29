@@ -1,29 +1,28 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://Assets/Death At My Heels.ogg" type="AudioStream" id=1]
-[ext_resource path="res://Assets/hospital background.png" type="Texture" id=2]
-[ext_resource path="res://Assets/ship.png" type="Texture" id=3]
-[ext_resource path="res://Scripts/Ship.gd" type="Script" id=4]
-[ext_resource path="res://Scripts/HUD.gd" type="Script" id=5]
-[ext_resource path="res://Scripts/Projectile.gd" type="Script" id=6]
-[ext_resource path="res://Scripts/Doctors.gd" type="Script" id=7]
-[ext_resource path="res://Scripts/Nurses.gd" type="Script" id=8]
-[ext_resource path="res://Scripts/Zombies.gd" type="Script" id=9]
-[ext_resource path="res://Scenes/Zombie.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scripts/Nurses.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/HUD.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/Projectile.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/Doctors.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/Zombies.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/Ship.gd" type="Script" id=7]
+[ext_resource path="res://Assets/Death At My Heels.ogg" type="AudioStream" id=8]
+[ext_resource path="res://Assets/hospital background.png" type="Texture" id=9]
+[ext_resource path="res://Assets/ship.png" type="Texture" id=10]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 10 )
 region = Rect2( 426, 0, 426, 1280 )
 
 [sub_resource type="AtlasTexture" id=2]
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 10 )
 region = Rect2( 426, 1280, 426, 1280 )
 
 [sub_resource type="AtlasTexture" id=3]
 flags = 4
-atlas = ExtResource( 3 )
+atlas = ExtResource( 10 )
 region = Rect2( 426, 2560, 426, 1280 )
 
 [sub_resource type="SpriteFrames" id=4]
@@ -41,7 +40,7 @@ height = 55.4666
 [node name="Game" type="Node2D"]
 
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 1 )
+stream = ExtResource( 8 )
 autoplay = true
 
 [node name="Background" type="ColorRect" parent="."]
@@ -55,51 +54,56 @@ __meta__ = {
 [node name="hospital background" type="Sprite" parent="Background"]
 position = Vector2( 508.24, 295.067 )
 scale = Vector2( 1.03, 1.022 )
-texture = ExtResource( 2 )
+texture = ExtResource( 9 )
 
 [node name="Projectile" type="Node2D" parent="."]
-script = ExtResource( 6 )
+position = Vector2( 418.149, -98.0842 )
+script = ExtResource( 4 )
 
 [node name="Timer" type="Timer" parent="Projectile"]
+one_shot = true
 
 [node name="Doctors" type="Node2D" parent="."]
-script = ExtResource( 7 )
+position = Vector2( 531.72, -92.9219 )
+script = ExtResource( 5 )
 
 [node name="Timer" type="Timer" parent="Doctors"]
 
 [node name="Nurses" type="Node2D" parent="."]
-script = ExtResource( 8 )
+position = Vector2( 232.305, -87.7596 )
+script = ExtResource( 2 )
 
 [node name="Timer" type="Timer" parent="Nurses"]
 
 [node name="Zombies" type="Node2D" parent="."]
-script = ExtResource( 9 )
+position = Vector2( 764.025, -92.9219 )
+script = ExtResource( 6 )
 
 [node name="Timer" type="Timer" parent="Zombies"]
 
-[node name="Zombie" parent="Zombies" instance=ExtResource( 10 )]
-position = Vector2( 3.25803, -39.626 )
-
 [node name="Ship" type="KinematicBody2D" parent="."]
-script = ExtResource( 4 )
+position = Vector2( 522.667, 505.049 )
+collision_layer = 3
+script = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Ship"]
-position = Vector2( 522.281, 486.393 )
+position = Vector2( 1.02246, -3.53857 )
 scale = Vector2( 0.1, 0.1 )
 frames = SubResource( 4 )
 animation = "fly"
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ship"]
-position = Vector2( 521.845, 495.628 )
+position = Vector2( 1.89832, 4.82928 )
 shape = SubResource( 5 )
 
 [node name="HUD" type="Node2D" parent="."]
-script = ExtResource( 5 )
+position = Vector2( -2.7085, 2.85204 )
+script = ExtResource( 3 )
 
 [node name="Health" type="Label" parent="HUD"]
 margin_left = 121.0
