@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Assets/Death At My Heels.ogg" type="AudioStream" id=1]
 [ext_resource path="res://Assets/hospital background.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Scripts/Doctors.gd" type="Script" id=7]
 [ext_resource path="res://Scripts/Nurses.gd" type="Script" id=8]
 [ext_resource path="res://Scripts/Zombies.gd" type="Script" id=9]
+[ext_resource path="res://Scenes/Zombie.tscn" type="PackedScene" id=10]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
@@ -76,6 +77,9 @@ script = ExtResource( 9 )
 
 [node name="Timer" type="Timer" parent="Zombies"]
 
+[node name="Zombie" parent="Zombies" instance=ExtResource( 10 )]
+position = Vector2( 3.25803, -39.626 )
+
 [node name="Ship" type="KinematicBody2D" parent="."]
 script = ExtResource( 4 )
 __meta__ = {
@@ -87,7 +91,7 @@ position = Vector2( 522.281, 486.393 )
 scale = Vector2( 0.1, 0.1 )
 frames = SubResource( 4 )
 animation = "fly"
-frame = 2
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ship"]

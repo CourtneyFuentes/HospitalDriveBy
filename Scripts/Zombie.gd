@@ -1,4 +1,4 @@
-extends RigidBody2D
+extends KinematicBody2D
 
 export var limit_y = 350
 export var score = 100
@@ -23,8 +23,6 @@ func die():
 func _ready():
 	randomize()
 	get_new_position()
-	contact_monitor = true
-	set_max_contacts_reported(4)
 
 
 func _physics_process(delta):

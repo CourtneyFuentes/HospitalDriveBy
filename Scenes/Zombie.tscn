@@ -51,8 +51,13 @@ extents = Vector2( 16.6814, 68.8346 )
 position = Vector2( 403.258, 308.374 )
 scale = Vector2( 0.1, 0.1 )
 
-[node name="Zombie" type="RigidBody2D" parent="."]
+[node name="Zombie" type="KinematicBody2D" parent="."]
 script = ExtResource( 2 )
+limit_y = null
+score = null
+damage = null
+speed = null
+move_probability = null
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Zombie"]
 frames = SubResource( 6 )

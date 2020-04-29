@@ -60,4 +60,5 @@ func _physics_process(delta):
 	if position.y < margin:
 		velocity.y = 0
 		position.y = margin
+	
 	var collision = move_and_collide(velocity)
