@@ -14,7 +14,7 @@ Photoshop to create the background image, Piksel to create the sprites,
 Ogg Vorbis file for background music used from patrickdearteaga.com
 
 This is the objective of the game: 
-Shoot the zombies with disinfectant to cure them and stop them from killing you!
+Shoot the zombies with disinfectant to cure them and stop them from infecting you! If a zombie hits you it decreases your score and could cause you to lose the game. Save the doctors and nurses before the zombies get them to increase your score.
 
 This is how the game is played: 
 WASD controls movement, Space bar shoots the disinfectant
