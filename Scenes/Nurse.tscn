@@ -23,17 +23,11 @@ animations = [ {
 
 [sub_resource type="RectangleShape2D" id=4]
 
-=======
-
-
 [node name="Nurse" type="Node2D"]
 scale = Vector2( 0.1, 0.1 )
 __meta__ = {
 "_edit_group_": true
 }
-
-
-=======
 
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Nurse"]

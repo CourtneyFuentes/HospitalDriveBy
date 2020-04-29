@@ -8,7 +8,6 @@ position = Vector2( 56.5332, 35.7589 )
 scale = Vector2( 2, 2 )
 
 [node name="Cure" type="RigidBody2D" parent="."]
-
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true

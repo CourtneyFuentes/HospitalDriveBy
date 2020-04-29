@@ -10,7 +10,7 @@ export var score = 250
 
 func _ready():
 	randomize()
-		queue_free()
+	#queue_free()
 
 func _integrate_forces(state):
 	#state.set_linear_velocity(velocity)
