@@ -20,7 +20,7 @@ This is how the game is played:
 WASD controls movement, Space bar shoots the disinfectant
 
 Struggles we encountered:
-The main struggle we had was the time contraint. As we all have other classes and this is the end of the year this is already a busy time for all of us. We originally had animated sprites, which looked cool, but made the game laggy and impossible to hit the zombies so we had to just convert them to unanimated sprites.
+The main struggle we had was the time contraint. As we all have other classes and this is the end of the year this is already a busy time for all of us. 
 
 Future plans: 
 In the future the game may have more enemies, a title screen, be more than one level (perhaps the levels go up the hospital floors)
@@ -30,6 +30,6 @@ In the future the game may have more enemies, a title screen, be more than one l
  
  Thomas McHugh: Story, Coding
  
- Courtney Fuentes: Story, Added background music, created/added the background picture, handled the repository
+ Courtney Fuentes: Story, Added background music, created/added the background picture, handled the repository/readme
  
 ![](Images/Screenshot%20(31).png)
