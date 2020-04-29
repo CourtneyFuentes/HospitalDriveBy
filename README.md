@@ -23,6 +23,8 @@ Future plans:
 
 ### Team Members
  Tanner Chaille: Created sprites, added collision shapes to sprites, and created their animations
+ 
  Thomas McHugh: Coding
+ 
  Courtney Fuentes: Added background music, created the background picture, handled the repository
  
