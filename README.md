@@ -26,10 +26,10 @@ Future plans:
 In the future the game may have more enemies, a title screen, be more than one level (perhaps the levels go up the hospital floors)
 
 ### Team Members
- Tanner Chaille: Created sprites, added collision shapes to sprites, created their animations, end screen
+ Tanner Chaille: Story, Created sprites, added collision shapes to sprites, created their animations, end screen
  
- Thomas McHugh: Coding
+ Thomas McHugh: Story, Coding
  
- Courtney Fuentes: Added background music, created/added the background picture, handled the repository
+ Courtney Fuentes: Story, Added background music, created/added the background picture, handled the repository
  
 ![](Images/Screenshot%20(31).png)
