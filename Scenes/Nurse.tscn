@@ -22,7 +22,9 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 12.8135, 24.1237 )
+
+=======
+
 
 [node name="Nurse" type="Node2D"]
 scale = Vector2( 0.1, 0.1 )
@@ -30,8 +32,9 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Nurse" type="RigidBody2D" parent="."]
-script = ExtResource( 2 )
+
+=======
+
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Nurse"]
 scale = Vector2( 0.1, 0.1 )

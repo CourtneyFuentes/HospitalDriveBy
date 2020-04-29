@@ -42,26 +42,16 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 15, 20 )
 
-[node name="Zombie" type="Node2D"]
-
-[node name="Zombie" type="RigidBody2D" parent="."]
-contacts_reported = 4
-contact_monitor = true
-script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Zombie"]
 scale = Vector2( 0.1, 0.1 )
 frames = SubResource( 6 )
-animation = "idle"
-frame = 2
+
 playing = true
 
 [node name="Timer" type="Timer" parent="Zombie"]
 
 [node name="Tween" type="Tween" parent="Zombie"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Zombie"]
-shape = SubResource( 7 )
-[connection signal="timeout" from="Zombie/Timer" to="Zombie" method="_on_Timer_timeout"]
+
