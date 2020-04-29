@@ -10,12 +10,13 @@ func _ready():
 func _physics_process(delta):
 	var colliding = get_colliding_bodies()
 	for c in colliding:
+		print(c.name)
 		if c.get_parent().name == "Zombies":
 			Player.change_score(c.score)
 			c.die()
 		queue_free()
-
-	if position.y < -10:
+	var pos = get_global_transform().get_origin()
+	if pos.y < -10:
 		queue_free()
 
 func _integrate_forces(state):
