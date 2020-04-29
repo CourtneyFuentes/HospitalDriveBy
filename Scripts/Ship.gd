@@ -2,7 +2,7 @@ extends KinematicBody2D
 export var health = 100
 export var score = 0
 export var margin = 5
-export var y_range = 350
+export var y_range = 300
 export var accel = 0.1
 
 var velocity = Vector2(0, 0)
@@ -54,10 +54,10 @@ func _physics_process(delta):
 	if position.x > View.x - margin:
 		velocity.x = 0
 		position.x = View.x - margin
-	if position.y < View.y - y_range:
-		velocity.y = 0
-		position.y = View.y - y_range
 	if position.y > View.y - margin:
 		velocity.y = 0
 		position.y = View.y - margin
+	if position.y < margin:
+		velocity.y = 0
+		position.y = margin
 	var collision = move_and_collide(velocity)
