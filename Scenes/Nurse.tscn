@@ -21,11 +21,21 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=4]
+<<<<<<< Updated upstream
 extents = Vector2( 119.682, 240.46 )
+=======
+extents = Vector2( 19.9598, 24.1237 )
+>>>>>>> Stashed changes
 
 [node name="Nurse" type="Node2D"]
 
+<<<<<<< Updated upstream
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+=======
+[node name="Nurse" type="RigidBody2D" parent="."]
+collision_layer = 4
+script = ExtResource( 2 )
+>>>>>>> Stashed changes
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
 frames = SubResource( 3 )

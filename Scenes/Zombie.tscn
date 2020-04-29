@@ -41,6 +41,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=7]
+<<<<<<< Updated upstream
 extents = Vector2( 94.9608, 193.789 )
 
 [sub_resource type="RectangleShape2D" id=8]
@@ -49,11 +50,26 @@ extents = Vector2( 16.6814, 68.8346 )
 [node name="Zombie" type="Node2D"]
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+=======
+extents = Vector2( 15.5567, 20 )
+
+[node name="Zombie" type="Node2D"]
+
+[node name="Zombie" type="RigidBody2D" parent="."]
+collision_layer = 7
+contacts_reported = 4
+contact_monitor = true
+script = ExtResource( 2 )
+>>>>>>> Stashed changes
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
 frames = SubResource( 6 )
+<<<<<<< Updated upstream
 animation = "healed"
 frame = 1
+=======
+animation = "idle"
+>>>>>>> Stashed changes
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
@@ -64,6 +80,13 @@ shape = SubResource( 7 )
 position = Vector2( 103.722, -86.0237 )
 shape = SubResource( 8 )
 
+<<<<<<< Updated upstream
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="KinematicBody2D"]
 position = Vector2( -120.629, -89.7679 )
 shape = SubResource( 8 )
+=======
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zombie"]
+position = Vector2( -2.10817, -0.790558 )
+shape = SubResource( 7 )
+[connection signal="timeout" from="Zombie/Timer" to="Zombie" method="_on_Timer_timeout"]
+>>>>>>> Stashed changes
