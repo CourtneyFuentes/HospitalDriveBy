@@ -31,6 +31,8 @@ __meta__ = {
 }
 
 [node name="Nurse" type="RigidBody2D" parent="."]
+collision_layer = 4
+collision_mask = 9
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Nurse"]
