@@ -19,6 +19,8 @@ Shoot the zombies with disinfectant to cure them and stop them from killing you!
 This is how the game is played: 
 WASD controls movement, Space bar shoots the disinfectant
 
+Struggles we encountered:
+
 Future plans:
 
 ### Team Members
