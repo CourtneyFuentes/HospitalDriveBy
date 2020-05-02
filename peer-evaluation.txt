@@ -1,0 +1,47 @@
+Name: Emily Clinkscales
+Date: 05/02/20
+
+Project: Final_Project: Hospital Drive By
+Group's repository: https://github.com/emclinks/HospitalDriveBy
+
+
+
+What is something you learned by reviewing this group's project? 
+#I had heard people thought of just reskinning the space shooter basically and this is honestly a pretty good rendition of it. Granted, it's more of like a 90's arcade shooter.
+ 
+
+In what ways does this game reflect the theme?: 
+#This game takes place within a hospital overflowing with patients and doctors, all fleeing from infected/zombified people. Coronavirus doesn't zombify, but this take certainly helps get the point across in a light-hearted manner.
+ 
+
+What is something you saw in this group's project that you would like to apply to your own future games?
+#God that sprite art is the best shit I've seen in awhile. Love the nostalgia of it and it'd be nice to play with sometime.
+ 
+
+What suggestions would you have for this group to improve the game?
+#I wish there was a replay option availible at the end screen, and that the movement controls were adjusted. It feels really sluggish and I'd just rather higher sensitivity and speed to enjoy it more.
+#While I understand now that this group went for a keyboard-based gameplay, spacebar is definitely not what my mind first went to to shoot the zombies.
+
+Was there anything in the GDScript that was confusing to you? If so, what?
+#Nope. Crystal-clear.
+ 
+
+Is it clear that every group member participated?
+#Yes.
+ 
+
+Does the repository contain an appropriate LICENSE?
+#Yes.
+ 
+
+What is something the group could add to the README.md to make it more descriptive?
+#No, and I realized if I just looked at the readme again just before playing I'd have known what the controls are.
+ 
+
+Pay a compliment to the group based on the quality of the game.
+#Honestly this game had me laughing at the first sight of that snapshot, and I knew I had to pick this to review. Other than the ship not moving as fast as I'd personally like, I can't find anything bad. It'd be a really fun and easy game to add more content to later.
+
+
+How many of your points would you allocate to this project?
+# Considering the other project I reviewed, I give this 4 of my 5 points.
+
