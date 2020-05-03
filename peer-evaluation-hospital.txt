@@ -20,7 +20,7 @@ What is something you saw in this group's project that you would like to apply t
 
 What suggestions would you have for this group to improve the game?
 
- I'm not sure if this was intentional or not, but maybe making it so that the nuses dont disappear when they hit the virus guys
+ this game was all around good, the only sugestion I could pssibly think of is maybe make the music louder.
 
 Was there anything in the GDScript that was confusing to you? If so, what?
 
@@ -36,7 +36,7 @@ Does the repository contain an appropriate LICENSE?
 
 What is something the group could add to the README.md to make it more descriptive?
 
- 
+ Nothing, the README was fine
 
 Pay a compliment to the group based on the quality of the game.
 
