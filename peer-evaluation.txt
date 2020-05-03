@@ -1,0 +1,60 @@
+Name: Aeris Meadows
+Date: 5/2/2020
+
+Project: Hospital Drive By
+Group's repository:  https://github.com/CourtneyFuentes/HospitalDriveBy
+
+
+
+What is something you learned by reviewing this group's project?
+The physics involved with making an ice-like effect were interesting to look into, as well as the respawning mechanic they
+implpemented. It was a very good game! 
+
+ 
+
+In what ways does this game reflect the theme?
+In this game, you are a nurse ship shooting cures at infected zombie-like patients. This game reflects the infection and 
+virus theme, displaying it through the hospital setting and the virus-ridden patients. 
+
+ 
+
+What is something you saw in this group's project that you would like to apply to your own future games?
+I would definently try to impliment a respawn mechanic in my future games, as theirs seems to work well. 
+
+ 
+
+What suggestions would you have for this group to improve the game?
+I love the sliding on the ice, but it was very hard to manage, so perhaps ironing out the mechanic to be more intuitive
+to the player would be a good idea. 
+ 
+
+
+Was there anything in the GDScript that was confusing to you? If so, what?
+The code looks clear and easy to read, with notes describing what parts do. 
+
+ 
+
+Is it clear that every group member participated?
+Based on the roles in the ReadMe, it seems every student played an even role. 
+
+ 
+
+Does the repository contain an appropriate LICENSE?
+This repository has a license with all contributors names.
+
+ 
+
+What is something the group could add to the README.md to make it more descriptive?
+This group's ReadMe was already very descriptive, but the creators mentioned they all worked on the story of the game,
+and I would like to see more of that story explained. 
+ 
+
+
+Pay a compliment to the group based on the quality of the game.
+This game is very cute and i would love to play it with even more levels if it were to become a full game in the future.
+
+
+
+How many of your points would you allocate to this project?
+I would allocate 2 of the 5 points. 
+
